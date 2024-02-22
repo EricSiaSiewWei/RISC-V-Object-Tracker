@@ -36,11 +36,15 @@ VisionFive 2 supports several boot modes through SD image, NVMe (Non-Volatile Me
 
 Step 2: Hardware Setup
   Step 2.1:  Logging into Debian
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
+| Index  | Boot Mode  | RGPIO_1 | RGPIO_0 |
+| :------------ |:---------------:| -----:| -----:|
+| 1 | 1-bit QSPI Nor Flash | 0 (L) | 0 (L) |
+| 2 | SDIO3.0        |   0 (L) | 1(H) |
+| 3 | eMMC        |    1(H) | 0 (L) |
+| 3 | UART        |    1(H) | 1(H) |
+
+TABLE 1: Boot Modes Settings
+
 
 Step 3: Software Libraries
 

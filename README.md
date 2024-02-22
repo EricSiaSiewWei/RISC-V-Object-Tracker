@@ -1,27 +1,51 @@
 # RISC-V-Object-Tracker
 
-Hardware Specification:
+**Required Hardware**
 1. StarFive VisionFive2 Single Board Computer (SBC) - 4GB RAM
-![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/472072ae-c593-440a-a196-cff9640d5010)
 2. Cubeternet GL-UPC822 UVC Webcam
-![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/a7146160-57e2-4ad1-a346-d12dcc2e80e6)
 3. Xeme WiFi6 Dongle
-![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/b5efcc67-2562-4c38-a5f9-e89d89e34a6c)
+4. 5V DC Brushless Fan
+5. Raspberry Pi Official USB-C Power Supply
+6. Kingston Memory Card 100MB/s 32GB Micro SD Card
+7. Kingston Micro SD Card Reader 
 
-
-Software Specification:
+**Installed Software Application**
 1. UltraVNC Viewer
-![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/9f216a57-b264-4b6a-9b15-ddfa3cd428ce)
 2. Python Integrated Development and Learning Environment (IDLE)
-![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/922570c5-49ad-439b-b27b-f0703a01ba29)
 3. Google Colaboratory  
-![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/5e661b2e-bd85-47f6-9c53-cce9e02f9266)
 
-
-Operating System:
+**Operating System**
 Debian 12 (bookworm)
-![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/e0793241-990a-4d2d-98fe-d63b680a6f81)
 
-User Guide:
-Step 1: Hardware Setup
-1. 
+**List of Optional Hardware**
+1. Viewsonic 24" VX2428J LCD Gaming Monitor
+2. LEAVEN Mechanical Keyboard
+3. Vention HDMI Cable 2.0
+4. GAMING FREAK Silent Mouse XX4 
+
+**User Guide:**
+Step 1: Flashing Debian OS
+VisionFive 2 supports several boot modes through SD image, NVMe (Non-Volatile Memory express) image, embedded MultiMediaCard (eMMC) image and Universal Asynchronous Receiver / Transmitter (UART). Nevertheless, SD card-based boot approach has been executed due to its simplicity, as it is a similar approach in setting up a Raspberry PI board.
+  Step 1.1:  Browse for latest engineering release from StarFive at Microsoft OneDrive link: https://debian.starfivetech.com/ 
+  Step 1.2:  Navigate towards SD card section and download the Debian image pre-built by StarFive.
+  Step 1.3: Download BalenaEtcher application. 
+  Step 1.4: Open BalenaEtcher software, in the meantime, insert a 32-GB micro-SD card into the laptop using USB micro-SD card reader. Ensure the selected SD storage is the targeted card.
+  Step 1.5: Extract the .img file from the downloaded .zip file from step 1.2. Upload the image file to BalenaEtcher and start the flash task.
+  Step 1.6: After finish writing the disk image, a successfully flash message appears further indicates that the 32-GB micro-SD card is ready to be ejected from laptop and to be inserted into SD card slot of VisionFive 2.
+
+
+Step 2: Hardware Setup
+  Step 2.1:  Logging into Debian
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
+
+Step 3: Software Libraries
+
+Step 4: Testing & Troubleshooting
+
+Step 5: Implementation
+
+

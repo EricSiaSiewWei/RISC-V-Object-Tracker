@@ -1,0 +1,12 @@
+names:
+- pipe
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: pipeline-tracks
+  url: https://universe.roboflow.com/utp-jtbn5/pipeline-tracks/dataset/2
+  version: 2
+  workspace: utp-jtbn5
+test: ../test/images
+train: Pipeline-tracks-2/train/images
+val: Pipeline-tracks-2/valid/images

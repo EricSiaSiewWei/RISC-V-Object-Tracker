@@ -73,8 +73,8 @@ Step 5: Software Libraries
 > chmod +x install_package_and_dependencies.sh
 > nano install_package_and_dependencies.sh
 > sudo ./install_package_and_dependencies.sh
-| Library                                 | Purpose                          |
-| :------------ | :------------ |
+| Library                                 | Purpose                         |
+| :-------------------------------------- | :------------------------------ |
 | libxslt1.1                              | LibreOffice Runtime Dependency  |
 | openjdk-11-jdk                          | LibreOffice Runtime Dependency  |
 | libmd4c-dev                             | QT Runtime Dependency           |
@@ -87,80 +87,80 @@ Step 5: Software Libraries
 | libxrender-dev                          | QT Runtime Dependency           |
 | libxi-dev                               | QT Runtime Dependency           |
 | libxkbcommon-x11-dev                    | QT Runtime Dependency           |
-| libevent-dev                            | Firefox Runtime Dependency     |
-| libdbus-glib-1-dev                      | Firefox Runtime Dependency     |
-| libopenal-dev                           | FFMPEG Runtime Dependency      |
-| libcdio-paranoia-dev                    | FFMPEG Runtime Dependency      |
-| libdc1394-dev                           | FFMPEG Runtime Dependency      |
-| libcaca-dev                             | FFMPEG Runtime Dependency      |
-| libv4l-dev                              | FFMPEG Runtime Dependency      |
-| libpocketsphinx-dev                     | FFMPEG Runtime Dependency      |
-| libbs2b-dev                             | FFMPEG Runtime Dependency      |
-| liblilv-0-0                             | FFMPEG Runtime Dependency      |
-| librubberband-dev                       | FFMPEG Runtime Dependency      |
-| libmysofa-dev                           | FFMPEG Runtime Dependency      |
-| libflite1                               | FFMPEG Runtime Dependency      |
-| libass-dev                              | FFMPEG Runtime Dependency      |
-| libvidstab-dev                          | FFMPEG Runtime Dependency      |
-| libzmq3-dev                             | FFMPEG Runtime Dependency      |
-| libzimg-dev                             | FFMPEG Runtime Dependency      |
-| libgme-dev                              | FFMPEG Runtime Dependency      |
-| libopenmpt-dev                          | FFMPEG Runtime Dependency      |
-| libchromaprint-dev                      | FFMPEG Runtime Dependency      |
-| librabbitmq-dev                         | FFMPEG Runtime Dependency      |
-| libssh-dev                              | FFMPEG Runtime Dependency      |
-| libsrt-openssl-dev                      | FFMPEG Runtime Dependency      |
-| liba52-0.7.4-dev                       | FFMPEG Runtime Dependency      |
-| libhwy1                                 | FFMPEG Runtime Dependency      |
-| libjxl0.7                               | FFMPEG Runtime Dependency      |
-| libv4l-0                                | v4l2test Runtime Dependency    |
-| libjpeg-dev                             | v4l2test Runtime Dependency    |
-| libdrm-dev                              | v4l2test Runtime Dependency    |
-| libv4l-0                                | v4l2test Runtime Dependency    |
-| libjpeg-dev                             | v4l2test Runtime Dependency    |
-| libdrm-dev                              | v4l2test Runtime Dependency    |
-| libv4l-0                                | v4l2test Runtime Dependency    |
-| libjpeg-dev                             | v4l2test Runtime Dependency    |
-| libdrm-dev                              | v4l2test Runtime Dependency    |
-| libre2-9                                | chromium Runtime Dependency    |
-| libminizip-dev                          | chromium Runtime Dependency    |
-| fonts-mathjax                           | opencv Runtime Dependency      |
-| libjs-mathjax                           | opencv Runtime Dependency      |
-| libpython3.11-minimal                   | opencv Runtime Dependency      |
-| libpython3.11-stdlib                    | opencv Runtime Dependency      |
-| python3-numpy                           | opencv Runtime Dependency      |
-| python3.11                              | opencv Runtime Dependency      |
-| python3.11-minimal                      | opencv Runtime Dependency      |
-| python3-h5py                            | opencv Runtime Dependency      |
-| libvtk9.1                               | opencv Runtime Dependency      |
-| libqt5test5                             | opencv Runtime Dependency      |
-| libqt5opengl5                           | opencv Runtime Dependency      |
-| libtesseract5                           | opencv Runtime Dependency      |
-| libgdcm-dev                             | opencv Runtime Dependency      |
-| libgdal-dev                             | opencv Runtime Dependency      |
-| gstreamer1.0-clutter-3.0               | cogl/clutter Runtime Dependency|
-| fonts-freefont-ttf                      | vlc Runtime Dependency         |
-| libaribb24-0                            | vlc Runtime Dependency         |
-| libcddb2                                | vlc Runtime Dependency         |
-| libdvbpsi10                             | vlc Runtime Dependency         |
-| libebml5                                | vlc Runtime Dependency         |
-| libixml10                               | vlc Runtime Dependency         |
-| liblirc-client0                         | vlc Runtime Dependency         |
-| liblua5.2-0                             | vlc Runtime Dependency         |
-| libmad0                                 | vlc Runtime Dependency         |
-| libmatroska7                            | vlc Runtime Dependency         |
-| libprotobuf-lite32                      | vlc Runtime Dependency         |
-| libqt5x11extras5                        | vlc Runtime Dependency         |
-| libresid-builder0c2a                    | vlc Runtime Dependency         |
-| libsdl-image1.2                         | vlc Runtime Dependency         |
-| libsdl1.2debian                         | vlc Runtime Dependency         |
-| libsidplay2                             | vlc Runtime Dependency         |
-| libspatialaudio0                        | vlc Runtime Dependency         |
-| libupnp13                               | vlc Runtime Dependency         |
-| libva-wayland2                          | vlc Runtime Dependency         |
-| libvncclient1                           | vlc Runtime Dependency         |
-| :------------ | :------------ |
-
+| libevent-dev                            | Firefox Runtime Dependency      |
+| libdbus-glib-1-dev                      | Firefox Runtime Dependency      |
+| libopenal-dev                           | FFMPEG Runtime Dependency       |
+| libcdio-paranoia-dev                    | FFMPEG Runtime Dependency       |
+| libdc1394-dev                           | FFMPEG Runtime Dependency       |
+| libcaca-dev                             | FFMPEG Runtime Dependency       |
+| libv4l-dev                              | FFMPEG Runtime Dependency       |
+| libpocketsphinx-dev                     | FFMPEG Runtime Dependency       |
+| libbs2b-dev                             | FFMPEG Runtime Dependency       |
+| liblilv-0-0                             | FFMPEG Runtime Dependency       |
+| librubberband-dev                       | FFMPEG Runtime Dependency       |
+| libmysofa-dev                           | FFMPEG Runtime Dependency       |
+| libflite1                               | FFMPEG Runtime Dependency       |
+| libass-dev                              | FFMPEG Runtime Dependency       |
+| libvidstab-dev                          | FFMPEG Runtime Dependency       | 
+| libzmq3-dev                             | FFMPEG Runtime Dependency       | 
+| libzimg-dev                             | FFMPEG Runtime Dependency       |
+| libgme-dev                              | FFMPEG Runtime Dependency       |
+| libopenmpt-dev                          | FFMPEG Runtime Dependency       |
+| libchromaprint-dev                      | FFMPEG Runtime Dependency       |
+| librabbitmq-dev                         | FFMPEG Runtime Dependency       |
+| libssh-dev                              | FFMPEG Runtime Dependency       |
+| libsrt-openssl-dev                      | FFMPEG Runtime Dependency       |
+| liba52-0.7.4-dev                       | FFMPEG Runtime Dependency        |
+| libhwy1                                 | FFMPEG Runtime Dependency       |
+| libjxl0.7                               | FFMPEG Runtime Dependency       |
+| libv4l-0                                | v4l2test Runtime Dependency     |
+| libjpeg-dev                             | v4l2test Runtime Dependency     |
+| libdrm-dev                              | v4l2test Runtime Dependency     |
+| libv4l-0                                | v4l2test Runtime Dependency     |
+| libjpeg-dev                             | v4l2test Runtime Dependency     |
+| libdrm-dev                              | v4l2test Runtime Dependency     |
+| libv4l-0                                | v4l2test Runtime Dependency     |
+| libjpeg-dev                             | v4l2test Runtime Dependency     |
+| libdrm-dev                              | v4l2test Runtime Dependency     |
+| libre2-9                                | chromium Runtime Dependency     |
+| libminizip-dev                          | chromium Runtime Dependency     |
+| fonts-mathjax                           | opencv Runtime Dependency       |
+| libjs-mathjax                           | opencv Runtime Dependency       |
+| libpython3.11-minimal                   | opencv Runtime Dependency       |
+| libpython3.11-stdlib                    | opencv Runtime Dependency       |
+| python3-numpy                           | opencv Runtime Dependency       |
+| python3.11                              | opencv Runtime Dependency       |
+| python3.11-minimal                      | opencv Runtime Dependency       |
+| python3-h5py                            | opencv Runtime Dependency       |
+| libvtk9.1                               | opencv Runtime Dependency       |
+| libqt5test5                             | opencv Runtime Dependency       |
+| libqt5opengl5                           | opencv Runtime Dependency       |
+| libtesseract5                           | opencv Runtime Dependency       |
+| libgdcm-dev                             | opencv Runtime Dependency       |
+| libgdal-dev                             | opencv Runtime Dependency       |
+| gstreamer1.0-clutter-3.0                | cogl/clutter Runtime Dependency |
+| fonts-freefont-ttf                      | vlc Runtime Dependency          |
+| libaribb24-0                            | vlc Runtime Dependency          |
+| libcddb2                                | vlc Runtime Dependency          |
+| libdvbpsi10                             | vlc Runtime Dependency          |
+| libebml5                                | vlc Runtime Dependency          |
+| libixml10                               | vlc Runtime Dependency          |
+| liblirc-client0                         | vlc Runtime Dependency          |
+| liblua5.2-0                             | vlc Runtime Dependency          |
+| libmad0                                 | vlc Runtime Dependency          |
+| libmatroska7                            | vlc Runtime Dependency          |
+| libprotobuf-lite32                      | vlc Runtime Dependency          |
+| libqt5x11extras5                        | vlc Runtime Dependency          |
+| libresid-builder0c2a                    | vlc Runtime Dependency          |
+| libsdl-image1.2                         | vlc Runtime Dependency          |
+| libsdl1.2debian                         | vlc Runtime Dependency          |
+| libsidplay2                             | vlc Runtime Dependency          |
+| libspatialaudio0                        | vlc Runtime Dependency          |
+| libupnp13                               | vlc Runtime Dependency          |
+| libva-wayland2                          | vlc Runtime Dependency          |
+| libvncclient1                           | vlc Runtime Dependency          |
+| :-------------------------------------- | :------------------------------ |
+ 
 2. Install essential python libraries via command "pip install" or "sudo apt-get install". These libraries support the the operations of OpenCV Legacy Trackers, YOLOv7 and YOLOv8. 
 | Package                              | Version       |
 | :------------ | :------------ |

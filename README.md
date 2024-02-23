@@ -73,6 +73,7 @@ Step 5: Software Libraries
 > chmod +x install_package_and_dependencies.sh
 > nano install_package_and_dependencies.sh
 > sudo ./install_package_and_dependencies.sh
+Table 2: Essential Packages provided by StarFive
 | Library                                 | Purpose                         |
 | :-------------------------------------- | :------------------------------ |
 | libxslt1.1                              | LibreOffice Runtime Dependency  |

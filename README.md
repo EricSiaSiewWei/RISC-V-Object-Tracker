@@ -112,7 +112,7 @@ Table 2: Essential Packages provided by StarFive.
 | librabbitmq-dev                         | FFMPEG Runtime Dependency       |
 | libssh-dev                              | FFMPEG Runtime Dependency       |
 | libsrt-openssl-dev                      | FFMPEG Runtime Dependency       |
-| liba52-0.7.4-dev                       | FFMPEG Runtime Dependency        |
+| liba52-0.7.4-dev                        | FFMPEG Runtime Dependency       |
 | libhwy1                                 | FFMPEG Runtime Dependency       |
 | libjxl0.7                               | FFMPEG Runtime Dependency       |
 | libv4l-0                                | v4l2test Runtime Dependency     |
@@ -164,8 +164,9 @@ Table 2: Essential Packages provided by StarFive.
 | :-------------------------------------- | :------------------------------ |
  
 2. Install essential python libraries via command "pip install" or "sudo apt-get install". These libraries support the the operations of OpenCV Legacy Trackers, YOLOv7 and YOLOv8.
+
 Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 and YOLOv8.
-| Package                              | Version             |
+| Library                              | Version             |
 | :----------------------------------- | :------------------ |
 | antlr4-python3-runtime               | 4.9.3               |
 | appdirs                              | 1.4.4               |
@@ -394,7 +395,7 @@ Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 an
 | wheel                                | 0.38.4              |
 | xlwt                                 | 1.3.0               |
 | vim                                  | 2:9.0.0813-1+b1     |
-| :----------------------------------- | :-----------------: |
+| :----------------------------------- | :------------------ |
 
 Step 5: Testing & Troubleshooting
 

@@ -69,6 +69,7 @@ Step 4: Expanding the rootfs partition
 
 Step 5: Software Libraries
 1.At Terminal (non-root mode), install the essential packages provided by StarFive. In this context, user will obtain browsers such as Firefox and Chromium, VLC and FFmpeg as media player, and others packages include node.js, v8, libsdl2-dev, GStreamer, v4l2test, Libreoffice, QT and NW.js. Some of these essential packages provided by StarFive are not available to download via apt/apt-get. To improve overall user experience, install vim and nautilus (Gnome File Viewer) and upgrade several existing packages. Alternatively, install all these libraries simply via commands below:
+
         $wget https://github.com/starfive-tech/Debian/releases/download/v0.8.0-engineering-release-wayland/install_package_and_dependencies.sh
         $chmod +x install_package_and_dependencies.sh
         $nano install_package_and_dependencies.sh

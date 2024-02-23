@@ -74,7 +74,7 @@ chmod +x install_package_and_dependencies.sh
 nano install_package_and_dependencies.sh
 sudo ./install_package_and_dependencies.sh
 
-Table 2: Essential Packages provided by StarFive
+Table 2: Essential Packages provided by StarFive.
 | Library                                 | Purpose                         |
 | :-------------------------------------- | :------------------------------ |
 | libxslt1.1                              | LibreOffice Runtime Dependency  |
@@ -163,7 +163,8 @@ Table 2: Essential Packages provided by StarFive
 | libvncclient1                           | vlc Runtime Dependency          |
 | :-------------------------------------- | :------------------------------ |
  
-2. Install essential python libraries via command "pip install" or "sudo apt-get install". These libraries support the the operations of OpenCV Legacy Trackers, YOLOv7 and YOLOv8. 
+2. Install essential python libraries via command "pip install" or "sudo apt-get install". These libraries support the the operations of OpenCV Legacy Trackers, YOLOv7 and YOLOv8.
+Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 and YOLOv8.
 | Package                              | Version       |
 | :----------------------------------- | :------------ |
 | antlr4-python3-runtime               | 4.9.3         |

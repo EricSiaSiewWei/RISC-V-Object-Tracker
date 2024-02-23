@@ -166,7 +166,7 @@ Table 2: Essential Packages provided by StarFive.
 2. Install essential python libraries via command "pip install" or "sudo apt-get install". These libraries support the the operations of OpenCV Legacy Trackers, YOLOv7 and YOLOv8.
 Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 and YOLOv8.
 | Package                              | Version             |
-| :----------------------------------- | :-----------------: |
+| :----------------------------------- | :------------------ |
 | antlr4-python3-runtime               | 4.9.3               |
 | appdirs                              | 1.4.4               |
 | astunparse                           | 1.6.3               |
@@ -393,7 +393,7 @@ Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 an
 | websocket-client                     | 1.2.3               |
 | wheel                                | 0.38.4              |
 | xlwt                                 | 1.3.0               |
-| vim                                  |2:9.0.0813-1+b1      |
+| vim                                  | 2:9.0.0813-1+b1      |
 | :----------------------------------- | :-----------------: |
 
 Step 5: Testing & Troubleshooting

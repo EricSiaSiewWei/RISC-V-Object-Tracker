@@ -163,7 +163,9 @@ Table 2: Essential Packages provided by StarFive.
 | libva-wayland2                          | vlc Runtime Dependency          |
 | libvncclient1                           | vlc Runtime Dependency          |
  
-2. Install essential python libraries via command "pip install" or "sudo apt-get install". These libraries support the the operations of OpenCV Legacy Trackers, YOLOv7 and YOLOv8. Alternatively, install all these libraries simply via command "pip install -r requirements.txt" at CLI.
+2. Install essential python libraries via command "pip install" or "sudo apt-get install". These libraries support the the operations of OpenCV Legacy Trackers, YOLOv7 and YOLOv8. Alternatively, install all these libraries simply via command.
+
+$pip install -r requirements.txt
 
 Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 and YOLOv8.
 | Library                              | Version             |

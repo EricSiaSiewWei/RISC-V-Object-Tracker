@@ -73,9 +73,8 @@ Step 5: Software Libraries
 > chmod +x install_package_and_dependencies.sh
 > nano install_package_and_dependencies.sh
 > sudo ./install_package_and_dependencies.sh
-|:-----------------------------------------|:--------------------------------|
 | Library                                 | Purpose                          |
-|:-----------------------------------------|:----------------------------------|
+| :------------ | :------------ |
 | libxslt1.1                              | LibreOffice Runtime Dependency  |
 | openjdk-11-jdk                          | LibreOffice Runtime Dependency  |
 | libmd4c-dev                             | QT Runtime Dependency           |
@@ -160,12 +159,11 @@ Step 5: Software Libraries
 | libupnp13                               | vlc Runtime Dependency         |
 | libva-wayland2                          | vlc Runtime Dependency         |
 | libvncclient1                           | vlc Runtime Dependency         |
-|:-----------------------------------------|:--------------------------------|
+| :------------ | :------------ |
 
 2. Install essential python libraries via command "pip install" or "sudo apt-get install". These libraries support the the operations of OpenCV Legacy Trackers, YOLOv7 and YOLOv8. 
-|:--------------------------------------|:---------------|
 | Package                              | Version       |
-|:--------------------------------------|:---------------|
+| :------------ | :------------ |
 | antlr4-python3-runtime               | 4.9.3         |
 | appdirs                              | 1.4.4         |
 | astunparse                           | 1.6.3         |
@@ -393,7 +391,7 @@ Step 5: Software Libraries
 | wheel                                | 0.38.4        |
 | xlwt                                 | 1.3.0         |
 | vim                                  |2:9.0.0813-1+b1|
-|:--------------------------------------|:---------------|
+| :------------ | :------------ |
 
 Step 5: Testing & Troubleshooting
 

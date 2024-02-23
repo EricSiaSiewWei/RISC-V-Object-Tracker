@@ -165,8 +165,8 @@ Table 2: Essential Packages provided by StarFive.
  
 2. Install essential python libraries via command "pip install" or "sudo apt-get install". These libraries support the the operations of OpenCV Legacy Trackers, YOLOv7 and YOLOv8. Alternatively, install all these libraries simply via command.
 
-$pip install -r requirements.txt
-
+        $pip install -r requirements.txt
+   
 Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 and YOLOv8.
 | Library                              | Version             |
 | :----------------------------------- | :------------------ |
@@ -398,7 +398,21 @@ Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 an
 | xlwt                                 | 1.3.0               |
 | vim                                  | 2:9.0.0813-1+b1     |
 
-Step 5: Testing & Troubleshooting
+Step 5: Camera Accessibility
+Use the 'lsusb' command to list the available device with device name and ID labelled. Identify the connected camera device and record its ID number. Perform the 'chmod' command to that specific video device to grant the permission for the host to access to the camera. To confirm if the permission has been granted, list the devices via 'v4l2-ctl' command. If the device is available under the list of StarFive Camera Subsystem, the camera is ready to be accessed, else it will return error: "Failed to open /dev/video4: Permission denied".
+
+        $lsusb
+        $sudo chmod 666 /dev/video4
+        $v4l2-ctl --list-devices
+        
+2. To test the camera accessibility, you may activate through ffplay via command
+
+        $ffplay -f v4l2 -framerate 30 -video_size 640x480 /dev/video4
+or
+
+        $
+
+Step 6: Implementing Autorun script
 
 
 Step 6: Implementation

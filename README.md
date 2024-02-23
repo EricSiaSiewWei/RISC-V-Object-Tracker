@@ -393,7 +393,7 @@ Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 an
 | websocket-client                     | 1.2.3               |
 | wheel                                | 0.38.4              |
 | xlwt                                 | 1.3.0               |
-| vim                                  | 2:9.0.0813-1+b1      |
+| vim                                  | 2:9.0.0813-1+b1     |
 | :----------------------------------- | :-----------------: |
 
 Step 5: Testing & Troubleshooting

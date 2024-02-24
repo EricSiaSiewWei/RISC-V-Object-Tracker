@@ -409,12 +409,35 @@ Use the 'lsusb' command to list the available device with device name and ID lab
 
         $ffplay -f v4l2 -framerate 30 -video_size 640x480 /dev/video4
 or
+        Open Python IDLE > Open file "Camera Test.py" > Run
+To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, which can be necessary for compatibility with RISC-V features.
 
-        $
+Step 6: Implementing Automatic Implementable Shell Script during Every Bootup
+1. Create a shell script in Home directory named "vnc_connect.sh" via command nano.
+        
+        $nano vnc_connect.sh
 
-Step 6: Implementing Autorun script
+2. In the script, insert the code to setup TigerVNC server session from Step 3 and code to setup camera accessibility from Step 5. Save and exit the script environment xia key "^X".
 
+        sleep 10
+        tigervncserver -xstartup /usr/bin/mate-session -geometry 1920x1080 -localhost no :1
+        
+        VIDEO_DEVICE="/dev/video4"
+        
+        # Check if the video device exists
+        if [ -e "$VIDEO_DEVICE" ]; then
+            echo "Video device $VIDEO_DEVICE found."
+        
+            # Perform sudo chmod 666 on the video device
+            sudo chmod 666 "$VIDEO_DEVICE"
+            echo "Permissions changed successfully."
+        else
+            echo "Video device $VIDEO_DEVICE not found."
+        fi
 
-Step 6: Implementation
+3. Restart the VisionFive2 SBC. Unplug the HDMI cable from the monitor, mouse and keyboard from the USB ports. 
+4. Open the UltraVNC application on local host computer, insert the IP address along with port number 1, eg. "192.168.137.244:1". A successful connection will be indicated by the pop up window that prompts user to insert password of that server. A MATE Desktop Environment will be displayed upon successful password authentication.
+
+Step 7: Implementation
 
 

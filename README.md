@@ -25,7 +25,7 @@ Debian 12 (bookworm)
 4. GAMING FREAK Silent Mouse XX4 
 
 **User Guide:**
-Step 1: Flashing Debian OS
+# Step 1: Flashing Debian OS
 VisionFive 2 supports several boot modes through SD image, NVMe (Non-Volatile Memory express) image, embedded MultiMediaCard (eMMC) image and Universal Asynchronous Receiver / Transmitter (UART). Nevertheless, SD card-based boot approach has been executed due to its simplicity, as it is a similar approach in setting up a Raspberry PI board.
 1. Browse for latest engineering release from StarFive at Microsoft OneDrive link: https://debian.starfivetech.com/
 2. Navigate towards SD card section and download the Debian image pre-built by StarFive.
@@ -35,7 +35,7 @@ VisionFive 2 supports several boot modes through SD image, NVMe (Non-Volatile Me
 6. After finish writing the disk image, a successfully flash message appears further indicates that the 32-GB micro-SD card is ready to be ejected from laptop and to be inserted into SD card slot of VisionFive 2.
 
 
-Step 2: Logging into Debian
+# Step 2: Logging into Debian
 Table 1: Boot Modes Settings
 | Index  | Boot Mode  | RGPIO_1 | RGPIO_0 |
 | :------------ |:---------------:| -----:| -----:|
@@ -53,7 +53,7 @@ Table 1: Boot Modes Settings
         Username: user
         Password: starfive
 
-Step 3: Remote Access Setup
+# Step 3: Remote Access Setup
 To ease the usage of VisionFive 2 SBC, it is essential to mirror a its interface screen to an IP-based screen mirroring software like UltraVNC for remote access, not to mention its benefits of easing data recording operations between the two operating systems, especially copying and pasting operations. Furthermore, screen mirroring removes the need to connect the peripheral devices such as monitor, keyboard and mouse to the SBC which can contribute to additional power consumption on VisionFive 2.
 1. Ensure USB WiFi adaptor is plugged into the peripheral I/O port of VisionFive2 SBC. Navigate to the network section in setting and connect to a known WiFi. Akin to command 'ipconfig' applied in Windows OS, command 'nmcli -p device show' used to show the IP address of VisionFive 2 SBC. Record the IP address '192.168.137.244'. Note the IP address may vary upon connection to different WiFi network.
 2. Enter privileged mode (root).
@@ -398,7 +398,7 @@ Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 an
 | xlwt                                 | 1.3.0               |
 | vim                                  | 2:9.0.0813-1+b1     |
 
-Step 5: Camera Accessibility
+# Step 5: Camera Accessibility
 Use the 'lsusb' command to list the available device with device name and ID labelled. Identify the connected camera device and record its ID number. Perform the 'chmod' command to that specific video device to grant the permission for the host to access to the camera. To confirm if the permission has been granted, list the devices via 'v4l2-ctl' command. If the device is available under the list of StarFive Camera Subsystem, the camera is ready to be accessed, else it will return error: "Failed to open /dev/video4: Permission denied".
 
         $lsusb
@@ -412,7 +412,7 @@ or
         Open Python IDLE > Open file "Camera Test.py" > Run
 To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, which can be necessary for compatibility with RISC-V features.
 
-Step 6: Implementing Automatic Implementable Shell Script during Every Bootup
+# Step 6: Implementing Automatic Implementable Shell Script during Every Bootup
 1. Create a shell script in Home directory named "vnc_connect.sh" via command nano.
         
         $nano vnc_connect.sh
@@ -438,7 +438,7 @@ Step 6: Implementing Automatic Implementable Shell Script during Every Bootup
 3. Restart the VisionFive2 SBC. Unplug the HDMI cable from the monitor, mouse and keyboard from the USB ports. 
 4. Open the UltraVNC application on local host computer, insert the IP address along with port number 1, eg. "192.168.137.244:1". A successful connection will be indicated by the pop up window that prompts user to insert password of that server. A MATE Desktop Environment will be displayed upon successful password authentication.
 
-# **Step 7: Generating Training **
+# Step 7: Generating Training
 1. Open the Google Colab notebooks stipulated at the files attached at directories below:
 
         yolov7 > YOLOv7_Pipe_Tracker.ipynb

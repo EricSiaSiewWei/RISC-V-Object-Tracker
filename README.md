@@ -409,6 +409,7 @@ Use the 'lsusb' command to list the available device with device name and ID lab
 
         $ffplay -f v4l2 -framerate 30 -video_size 640x480 /dev/video4
 or
+
         Open Python IDLE > Open file "Camera Test.py" > Run
 To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, which can be necessary for compatibility with RISC-V features.
 
@@ -438,7 +439,7 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 3. Restart the VisionFive2 SBC. Unplug the HDMI cable from the monitor, mouse and keyboard from the USB ports. 
 4. Open the UltraVNC application on local host computer, insert the IP address along with port number 1, eg. "192.168.137.244:1". A successful connection will be indicated by the pop up window that prompts user to insert password of that server. A MATE Desktop Environment will be displayed upon successful password authentication.
 
-# Step 7: Generating Training
+# Step 7: Generating PyTorch Trained Model Files for YOLOv7 and YOLOv8
 1. Open the Google Colab notebooks stipulated at the files attached at directories below:
 
         yolov7 > YOLOv7_Pipe_Tracker.ipynb
@@ -449,3 +450,8 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
         For YOLOv7, run/train/exp/best.pt
         For YOLOv8, ultralytics/yolo/v8/detect/best.pt
 
+# Step 8: Implementation
+
+        For YOLOv7, open Python IDLE > Open file "yolov7/detect.py" > Run
+
+        For YOLOv8, open Python IDLE > Open file "yolov7/YOLOv8 Live Webcam Tracker.py" > Run

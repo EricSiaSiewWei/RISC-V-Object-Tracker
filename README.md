@@ -438,6 +438,14 @@ Step 6: Implementing Automatic Implementable Shell Script during Every Bootup
 3. Restart the VisionFive2 SBC. Unplug the HDMI cable from the monitor, mouse and keyboard from the USB ports. 
 4. Open the UltraVNC application on local host computer, insert the IP address along with port number 1, eg. "192.168.137.244:1". A successful connection will be indicated by the pop up window that prompts user to insert password of that server. A MATE Desktop Environment will be displayed upon successful password authentication.
 
-Step 7: Implementation
+# **Step 7: Generating Training **
+1. Open the Google Colab notebooks stipulated at the files attached at directories below:
 
+        yolov7 > YOLOv7_Pipe_Tracker.ipynb
+        yolov8 > YOLOv8_Pipe_Tracker.ipynb
+
+2. After running all the codes line in the files at Google Colab, navigate to the files tab section at the Google Colab, searching for PyTorch trained model file (.pt) generated at the directories below. Remember to save the directories at Google Drive via function "Mount Drive".
+
+        For YOLOv7, run/train/exp/best.pt
+        For YOLOv8, ultralytics/yolo/v8/detect/best.pt
 

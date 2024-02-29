@@ -182,9 +182,6 @@ def detect(source, weights, device, img_size, iou_thres, conf_thres):
     
 if __name__ == '__main__':
     weights_path = r"/home/user/Documents/FYP_19000760/yolov7/runs/train/exp3/weights/best.pt"
-    #weights_path = "yolov7.pt"
-    #source = '/dev/video4, cv2.CAP_V4L2'
-    #source = 'http://192.168.137.118:81/stream'
     source = '/dev/video4'
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     print(device)

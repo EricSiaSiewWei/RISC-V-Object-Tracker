@@ -72,6 +72,7 @@ To ease the usage of VisionFive 2 SBC, it is essential to mirror a its interface
 # Step 4: Inspection of Installed Hardware Spec
 1.To visualize the comprehensive report about various aspects of your system, including hardware configuration, system resources, network information, and more, users may pass command 
 
+        $sudo apt-get install inxi
         $inxi --full
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/639798c0-2f3d-4e72-854d-793c40f6e6b2)
 2. It is essential to check the usable space on memory compartment (32-GB SD card) and expand the rootfs partition. If the available usable space of SD card at /dev/mmcblk1p4 is mismatched with the expected specification (usually smaller), several commands are needed to expand the unused space on the SD card. This is important to enable user to install any relevant libraries for future works.

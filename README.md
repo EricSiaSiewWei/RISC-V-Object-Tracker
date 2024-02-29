@@ -69,8 +69,12 @@ To ease the usage of VisionFive 2 SBC, it is essential to mirror a its interface
 7.  Return to client laptop, insert the IP address recorded from STEP 1 into the section, with a format (Server's hostname or IP address):(display number). Press connect and enter password 'starfive' for input authentication. A successful login will be verified by the pop up of Debian OS home page.
 8.  After every usage, it is optional for user to either manually kill the TigerVNC server or perform shutdown at start icon to close the connection between client laptop with VisionFive2 SBC.
 
-Step 4: Expanding the rootfs partition 
-1. It is essential to check the usable space on memory compartment (32-GB SD card). If the available usable space of SD card at /dev/mmcblk1p4 is mismatched with the expected specification (usually smaller), several commands are needed to expand the unused space on the SD card. This is important to enable user to install any relevant libraries for future works.
+# Step 4: Inspection of Installed Hardware Spec
+1.To visualize the comprehensive report about various aspects of your system, including hardware configuration, system resources, network information, and more, users may pass command 
+
+        $inxi --full
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/639798c0-2f3d-4e72-854d-793c40f6e6b2)
+2. It is essential to check the usable space on memory compartment (32-GB SD card) and expand the rootfs partition. If the available usable space of SD card at /dev/mmcblk1p4 is mismatched with the expected specification (usually smaller), several commands are needed to expand the unused space on the SD card. This is important to enable user to install any relevant libraries for future works.
 
 Step 5: Software Libraries
 1.At Terminal (non-root mode), install the essential packages provided by StarFive. In this context, user will obtain browsers such as Firefox and Chromium, VLC and FFmpeg as media player, and others packages include node.js, v8, libsdl2-dev, GStreamer, v4l2test, Libreoffice, QT and NW.js. Some of these essential packages provided by StarFive are not available to download via apt/apt-get. To improve overall user experience, install vim and nautilus (Gnome File Viewer) and upgrade several existing packages. Alternatively, install all these libraries simply via commands below:
@@ -459,6 +463,10 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
         For YOLOv7, run/train/exp/best.pt
         For YOLOv8, ultralytics/yolo/v8/detect/best.pt
 
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/665fed65-b365-45b8-aaaf-c503e0611180)
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/8c5512ae-f444-4697-bc95-ac640e4fdc5f)
+
+
 # Step 8: Implementation of CV2 legacy tracker (Skip if you intended to implement YOLOv7 or YOLOv8)
 1. For CV2 legacy tracker, open Python IDLE > Open file "CV2 Legacy Tracker.py".
 2. At line 11, define the camera source, in this case, "/dev/video4".
@@ -485,7 +493,7 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 5. Visualise the resource usage using glances, glances is a debian resource monitoring tool.
 
 **Note:**
-1. **Camera Assessibility**: VF2 board would have different value for /dev/video#, eg. # may vary from 3 ~ 8 during every bootup or different USB connection of camera.
+1. **Camera Accessibility**: VF2 board would have different value for /dev/video#, eg. # may vary from 3 ~ 8 during every bootup or different USB connection of camera.
 2. **PyTorch Compatibility**: VF2 board did not support the installation of CUDA-based PyTorch libraries, which enabling the use of GPU into the computer vision tasks. 
 From the torchv library available on VF2 from command 
 
@@ -517,3 +525,7 @@ The YOLOv7 files cloned from https://github.com/WongKinYiu/yolov7/blob/main/util
 | response = requests.get(f'https://api.github.com/repos/{repo}/releases/latest').json()   | After: response = requests.get(f'https://api.github.com/repos/{repo}/releases/71389134').json()              |
 
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/267c6482-73b0-453d-b2fe-fcbc0d252f67)
+
+4. **Visualize Resource Usage**:
+Apart from using glances, users may use htop to visualize the resource
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/25398f2a-8f24-4d3d-ac34-8290b8513904)

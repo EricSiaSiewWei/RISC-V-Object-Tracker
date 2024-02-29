@@ -459,12 +459,14 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 2. At line 11, define the camera source, in this case, "/dev/video4".
 3. Run the python code via key F5.
 4. A window will appear to prompt user to draw a blue bounding box to select the object to track.
+5. Visualise the resource usage using glances, glances is a debian resource monitoring tool.
 
 # Step 9: Implementation of YOLOv7 (Skip if you intended to implement CV2 legacy tracker or YOLOv8)
 1. For YOLOv7, open Python IDLE > Open file "yolov7/detect.py"
 2. At line 185, define the camera source, in this case, "/dev/video4".
 3. At line 184, ensure your PyTorch weight file, in this case, r"/home/user/Documents/FYP_19000760/yolov7/runs/train/exp3/weights/best.pt", is saved at the same directory as the "detect.py".
 4. Run the python code via key F5.
+5. Visualise the resource usage using glances, glances is a debian resource monitoring tool.
 
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/68ddaaa3-0415-404d-9d71-3d7e0225fea1)
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/325e93b4-c168-4764-a0ef-52f7cb0a8720)
@@ -475,3 +477,4 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 2. At line 90, define the camera source, in this case, "/dev/video4".
 3. At line 95, ensure your PyTorch weight file, in this case, "bestn.pt", is saved at the same directory as the "YOLOv8 Live Webcam Tracker.py".
 4. Run the python code via key F5.
+5. Visualise the resource usage using glances, glances is a debian resource monitoring tool.

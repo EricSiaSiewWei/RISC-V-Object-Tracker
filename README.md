@@ -495,17 +495,23 @@ From the torchv library available on VF2 from command
 
 It is observed that there are only one version of PyTorch (unstable 1.12.1-1+b1 riscv64) available on RISC-V embedded system board,  
 
-        $sudo apt-get install python3-torchvision=0.13.1-1
+        $sudo apt-get install python3-torch=1.12.1-1+b1
 
 From the torchvision library available on VF2 from command 
 
         $apt list -a python3-torchvision
-   
+
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/2b70a337-e27e-41f2-adbf-30dca680b71a)
+
 It is observed that there are only one version of PyTorch (unstable 0.13.1-1 riscv64) available on RISC-V embedded system board,
 
         $sudo apt-get install python3-torchvision=0.13.1-1
         
-![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/2b70a337-e27e-41f2-adbf-30dca680b71a)
-
 Neither of the version above compatible with the GPU (CUDA) usage, thus the future endeavour of enabling the installation of Torch library supporting CUDA as the compute platform, outlined at https://pytorch.org/, would be passed to StarFive Technology Co., Ltd as well as RISC-V developing community.
+3. **Modification Made to yolov7/utils/google_utils.py**: 
+The YOLOv7 files cloned from https://github.com/WongKinYiu/yolov7/blob/main/utils/google_utils.py was modified to eliminate github read error, such that at line 25, 
 
+        Before: response = requests.get(f'https://api.github.com/repos/{repo}/releases/latest').json()  # github api
+        After: response = requests.get(f'https://api.github.com/repos/{repo}/releases/71389134').json()
+
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/267c6482-73b0-453d-b2fe-fcbc0d252f67)

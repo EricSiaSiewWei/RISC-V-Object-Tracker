@@ -1,6 +1,7 @@
 # RISC-V-Object-Tracker
 
 **Required Hardware**
+
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/762184d8-77b8-41d4-a140-5be1535ebc13)
 1. StarFive VisionFive2 Single Board Computer (SBC) - 4GB RAM
 2. Cubeternet GL-UPC822 UVC Webcam
@@ -482,3 +483,29 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 3. At line 95, ensure your PyTorch weight file, in this case, "bestn.pt", is saved at the same directory as the "YOLOv8 Live Webcam Tracker.py".
 4. Run the python code via key F5.
 5. Visualise the resource usage using glances, glances is a debian resource monitoring tool.
+
+**Note:**
+1. **Camera Assessibility**: VF2 board would have different value for /dev/video#, eg. # may vary from 3 ~ 8 during every bootup or different USB connection of camera.
+2. **PyTorch Compatibility**: VF2 board did not support the installation of CUDA-based PyTorch libraries, which enabling the use of GPU into the computer vision tasks. 
+From the torchv library available on VF2 from command 
+
+        $apt list -a python3-torch
+
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/e17e1b8a-3ace-4140-980a-3a474999468c)
+
+It is observed that there are only one version of PyTorch (unstable 1.12.1-1+b1 riscv64) available on RISC-V embedded system board,  
+
+        $sudo apt-get install python3-torchvision=0.13.1-1
+
+From the torchvision library available on VF2 from command 
+
+        $apt list -a python3-torchvision
+   
+It is observed that there are only one version of PyTorch (unstable 0.13.1-1 riscv64) available on RISC-V embedded system board,
+
+        $sudo apt-get install python3-torchvision=0.13.1-1
+        
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/2b70a337-e27e-41f2-adbf-30dca680b71a)
+
+Neither of the version above compatible with the GPU (CUDA) usage, thus the future endeavour of enabling the installation of Torch library supporting CUDA as the compute platform, outlined at https://pytorch.org/, would be passed to StarFive Technology Co., Ltd as well as RISC-V developing community.
+

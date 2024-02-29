@@ -1,4 +1,4 @@
-# RISC-V-Object-Tracker
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/2fc4c17f-a749-402c-9ce4-25e76a8bb13e)![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/9b2ad29f-eafd-4f4f-867d-2ef7895e4c9c)# RISC-V-Object-Tracker
 
 **Required Hardware**
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/762184d8-77b8-41d4-a140-5be1535ebc13)
@@ -412,6 +412,9 @@ or
 
         Open Python IDLE > Open file "Camera Test.py" > Run
 To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, which can be necessary for compatibility with RISC-V features.
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/a506cac6-05b0-4e05-a878-fa18fbe3505b)
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/c68aeec3-38d6-4a0c-b26d-23c87b0f9bea)
+
 
 # Step 6: Implementing Automatic Implementable Shell Script during Every Bootup
 1. Create a shell script in Home directory named "vnc_connect.sh" via command nano.
@@ -450,8 +453,23 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
         For YOLOv7, run/train/exp/best.pt
         For YOLOv8, ultralytics/yolo/v8/detect/best.pt
 
-# Step 8: Implementation
+# Step 8: Implementation of CV2 legacy tracker (Skip if you intended to implement YOLOv7 or YOLOv8)
+1. For CV2 legacy tracker, open Python IDLE > Open file "CV2 Legacy Tracker.py".
+2. At line 11, define the camera source, in this case, "/dev/video4".
+3. Run the python code via key F5.
+4. A window will appear to prompt user to draw a blue bounding box to select the object to track.
 
-        For YOLOv7, open Python IDLE > Open file "yolov7/detect.py" > Run
+# Step 9: Implementation of YOLOv7 (Skip if you intended to implement CV2 legacy tracker or YOLOv8)
+1. For YOLOv7, open Python IDLE > Open file "yolov7/detect.py"
+2. At line 185, define the camera source, in this case, "/dev/video4".
+3. At line 184, ensure your PyTorch weight file, in this case, r"/home/user/Documents/FYP_19000760/yolov7/runs/train/exp3/weights/best.pt", is saved at the same directory as the "detect.py".
+4. Run the python code via key F5.
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/68ddaaa3-0415-404d-9d71-3d7e0225fea1)
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/325e93b4-c168-4764-a0ef-52f7cb0a8720)
+     
 
-        For YOLOv8, open Python IDLE > Open file "yolov7/YOLOv8 Live Webcam Tracker.py" > Run
+# Step 10: Implementation of YOLOv7 (Skip if you intended to implement CV2 legacy tracker or YOLOv8)
+1. For YOLOv8, open Python IDLE > Open file "yolov8/YOLOv8 Live Webcam Tracker.py" 
+3. At line 90, define the camera source, in this case, "/dev/video4".
+4. At line 95, ensure your PyTorch weight file, in this case, "bestn.pt", is saved at the same directory as the "YOLOv8 Live Webcam Tracker.py".
+4. Run the python code via key F5.

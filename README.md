@@ -44,12 +44,16 @@ Table 1: Boot Modes Settings
 | 3 | eMMC        |    1(H) | 0 (L) |
 | 3 | UART        |    1(H) | 1(H) |
 1. Perform the setup shown below
+
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/a9ebd624-cf41-4934-b3ba-e3d90df1bb4e)![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/9e762dc3-2e7d-4212-982f-bddff6be17b6)
-2. Connect Raspberry Pi Official USB-C Power Supply into VisionFive 2 USB C port. For first time setup, it is essential to connect VisionFive2 SBC to monitor through High-Definition Multimedia Interface (HDMI) cable.
-3. There are 4 types of boot modes, namely 1-bit QSPI Nor Flash, UART, eMMC and SDIO3.0 based on Table 1. Select the boot mode SDIO with Rapid General-Purpose Input/Output Drivers (RGPIO) configuration as followed:
+
+3. Connect Raspberry Pi Official USB-C Power Supply into VisionFive 2 USB C port. For first time setup, it is essential to connect VisionFive2 SBC to monitor through High-Definition Multimedia Interface (HDMI) cable.
+4. There are 4 types of boot modes, namely 1-bit QSPI Nor Flash, UART, eMMC and SDIO3.0 based on Table 1. Select the boot mode SDIO with Rapid General-Purpose Input/Output Drivers (RGPIO) configuration as followed:
         RGPIO_1: 0 (LOW) and RGPIO_0: 1 (HIGH).
+        
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/a9ebd624-cf41-4934-b3ba-e3d90df1bb4e)![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/9e762dc3-2e7d-4212-982f-bddff6be17b6)
-4. A Gnome login interface appears which prompts user to enter the credentials as follows. Open Terminal Emulator after successful login.
+
+5. A Gnome login interface appears which prompts user to enter the credentials as follows. Open Terminal Emulator after successful login.
         Username: user
         Password: starfive
 

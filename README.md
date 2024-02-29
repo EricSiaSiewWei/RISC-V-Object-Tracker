@@ -512,9 +512,8 @@ Neither of the version above compatible with the GPU (CUDA) usage, thus the futu
 3. **Modification Made to yolov7/utils/google_utils.py**: 
 The YOLOv7 files cloned from https://github.com/WongKinYiu/yolov7/blob/main/utils/google_utils.py was modified to eliminate github read error, such that at line 25, 
 
-| Before                                                                                                             | After                                                                                         
-                                                                                    |
-| :----------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| response = requests.get(f'https://api.github.com/repos/{repo}/releases/latest').json()  # github api               | After: response = requests.get(f'https://api.github.com/repos/{repo}/releases/71389134').json()               |
+| Before                                                                                   | After                                                                                                        |
+| :--------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| response = requests.get(f'https://api.github.com/repos/{repo}/releases/latest').json()   | After: response = requests.get(f'https://api.github.com/repos/{repo}/releases/71389134').json()              |
 
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/267c6482-73b0-453d-b2fe-fcbc0d252f67)

@@ -510,7 +510,7 @@ It is observed that there are only one version of PyTorch (unstable 0.13.1-1 ris
 Neither of the version above compatible with the GPU (CUDA) usage, thus the future endeavour of enabling the installation of Torch library supporting CUDA as the compute platform, outlined at https://pytorch.org/, would be passed to StarFive Technology Co., Ltd as well as RISC-V developing community.
 
 3. **Modification Made to yolov7/utils/google_utils.py**: 
-The YOLOv7 files cloned from https://github.com/WongKinYiu/yolov7/blob/main/utils/google_utils.py was modified to eliminate github read error, such that at line 25, 
+The YOLOv7 files cloned from https://github.com/WongKinYiu/yolov7/blob/main/utils/google_utils.py was modified from syntax "latest" to certain specific release "71389134" to eliminate github read error, such that at line 25, 
 
 | Before                                                                                   | After                                                                                                        |
 | :--------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |

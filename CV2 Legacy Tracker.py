@@ -8,8 +8,8 @@ Subject: OpenCV Legacy Tracker
 import cv2
 import time
 
-source = 0    # 0 denotes Webcam
-cap = cv2.VideoCapture(source)
+source = '/dev/video4'
+cap = cv2.VideoCapture(source, cv2.CAP_V4L2)
 tracker = cv2.legacy_TrackerMOSSE.create()
 
 #Supported Trackers:

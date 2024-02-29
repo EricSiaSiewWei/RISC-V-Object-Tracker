@@ -1,4 +1,4 @@
-![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/2fc4c17f-a749-402c-9ce4-25e76a8bb13e)![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/9b2ad29f-eafd-4f4f-867d-2ef7895e4c9c)# RISC-V-Object-Tracker
+# RISC-V-Object-Tracker
 
 **Required Hardware**
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/762184d8-77b8-41d4-a140-5be1535ebc13)
@@ -468,8 +468,9 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/325e93b4-c168-4764-a0ef-52f7cb0a8720)
      
 
-# Step 10: Implementation of YOLOv7 (Skip if you intended to implement CV2 legacy tracker or YOLOv8)
+# Step 10: Implementation of YOLOv8 (Skip if you intended to implement CV2 legacy tracker or YOLOv7)
 1. For YOLOv8, open Python IDLE > Open file "yolov8/YOLOv8 Live Webcam Tracker.py" 
 3. At line 90, define the camera source, in this case, "/dev/video4".
 4. At line 95, ensure your PyTorch weight file, in this case, "bestn.pt", is saved at the same directory as the "YOLOv8 Live Webcam Tracker.py".
 4. Run the python code via key F5.
+![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/2fc4c17f-a749-402c-9ce4-25e76a8bb13e)![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/9b2ad29f-eafd-4f4f-867d-2ef7895e4c9c)

@@ -65,6 +65,7 @@ Table 1: Boot Modes Settings
 # Step 3: Remote Access Setup
 <details><summary> <b>Expand</b> </summary>
 To ease the usage of VisionFive 2 SBC, it is essential to mirror a its interface screen to an IP-based screen mirroring software like UltraVNC for remote access, not to mention its benefits of easing data recording operations between the two operating systems, especially copying and pasting operations. Furthermore, screen mirroring removes the need to connect the peripheral devices such as monitor, keyboard and mouse to the SBC which can contribute to additional power consumption on VisionFive 2.
+        
 1. Ensure USB WiFi adaptor is plugged into the peripheral I/O port of VisionFive2 SBC. Navigate to the network section in setting and connect to a known WiFi. Akin to command 'ipconfig' applied in Windows OS, command 'nmcli -p device show' used to show the IP address of VisionFive 2 SBC. Record the IP address '192.168.137.244'. Note the IP address may vary upon connection to different WiFi network.
 2. Enter privileged mode (root).
 3. Install UltraVNC viewer on client laptop. Back to VisionFive 2 SBC, install a standalone TigerVNC server.
@@ -77,6 +78,7 @@ To ease the usage of VisionFive 2 SBC, it is essential to mirror a its interface
 
 # Step 4: Inspection of Installed Hardware Spec
 <details><summary> <b>Expand</b> </summary>
+        
 1.To visualize the comprehensive report about various aspects of your system, including hardware configuration, system resources, network information, and more, users may pass command 
 
         $sudo apt-get install inxi
@@ -93,7 +95,7 @@ Step 5: Software Libraries
         $sudo ./install_package_and_dependencies.sh
 
 Table 2: Essential Packages provided by StarFive.
-<details>
+
 | Library                                 | Purpose                         |
 | :-------------------------------------- | :------------------------------ |
 | libxslt1.1                              | LibreOffice Runtime Dependency  |
@@ -186,7 +188,7 @@ Table 2: Essential Packages provided by StarFive.
         $pip install -r requirements.txt
    
 Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 and YOLOv8.
-<details>
+
 | Library                              | Version             |
 | :----------------------------------- | :------------------ |
 | antlr4-python3-runtime               | 4.9.3               |

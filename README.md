@@ -27,6 +27,7 @@ Debian 12 (bookworm)
 
 **User Guide:**
 # Step 1: Flashing Debian OS
+<details><summary> <b>Expand</b> </summary>
 VisionFive 2 supports several boot modes through SD image, NVMe (Non-Volatile Memory express) image, embedded MultiMediaCard (eMMC) image and Universal Asynchronous Receiver / Transmitter (UART). Nevertheless, SD card-based boot approach has been executed due to its simplicity, as it is a similar approach in setting up a Raspberry PI board.
 1. Browse for latest engineering release from StarFive at Microsoft OneDrive link: https://debian.starfivetech.com/
 2. Navigate towards SD card section and download the Debian image pre-built by StarFive.
@@ -34,9 +35,10 @@ VisionFive 2 supports several boot modes through SD image, NVMe (Non-Volatile Me
 4. Open BalenaEtcher software, in the meantime, insert a 32-GB micro-SD card into the laptop using USB micro-SD card reader. Ensure the selected SD storage is the targeted card.
 5. Extract the .img file from the downloaded .zip file from Step 2. Upload the image file to BalenaEtcher and start the flash task.
 6. After finish writing the disk image, a successfully flash message appears further indicates that the 32-GB micro-SD card is ready to be ejected from laptop and to be inserted into SD card slot of VisionFive 2.
-
+</details>
 
 # Step 2: Logging into Debian
+<details><summary> <b>Expand</b> </summary>
 Table 1: Boot Modes Settings
 | Index  | Boot Mode  | RGPIO_1 | RGPIO_0 |
 | :------------ |:---------------:| -----:| -----:|
@@ -57,8 +59,10 @@ Table 1: Boot Modes Settings
 5. A Gnome login interface appears which prompts user to enter the credentials as follows. Open Terminal Emulator after successful login.
         Username: user
         Password: starfive
+</details>
 
 # Step 3: Remote Access Setup
+<details><summary> <b>Expand</b> </summary>
 To ease the usage of VisionFive 2 SBC, it is essential to mirror a its interface screen to an IP-based screen mirroring software like UltraVNC for remote access, not to mention its benefits of easing data recording operations between the two operating systems, especially copying and pasting operations. Furthermore, screen mirroring removes the need to connect the peripheral devices such as monitor, keyboard and mouse to the SBC which can contribute to additional power consumption on VisionFive 2.
 1. Ensure USB WiFi adaptor is plugged into the peripheral I/O port of VisionFive2 SBC. Navigate to the network section in setting and connect to a known WiFi. Akin to command 'ipconfig' applied in Windows OS, command 'nmcli -p device show' used to show the IP address of VisionFive 2 SBC. Record the IP address '192.168.137.244'. Note the IP address may vary upon connection to different WiFi network.
 2. Enter privileged mode (root).
@@ -68,8 +72,10 @@ To ease the usage of VisionFive 2 SBC, it is essential to mirror a its interface
 6. Initiate the VNC server with MATE desktop, screen resolution [1920x1080], display number 1.
 7.  Return to client laptop, insert the IP address recorded from STEP 1 into the section, with a format (Server's hostname or IP address):(display number). Press connect and enter password 'starfive' for input authentication. A successful login will be verified by the pop up of Debian OS home page.
 8.  After every usage, it is optional for user to either manually kill the TigerVNC server or perform shutdown at start icon to close the connection between client laptop with VisionFive2 SBC.
+</details>
 
 # Step 4: Inspection of Installed Hardware Spec
+<details><summary> <b>Expand</b> </summary>
 1.To visualize the comprehensive report about various aspects of your system, including hardware configuration, system resources, network information, and more, users may pass command 
 
         $sudo apt-get install inxi
@@ -86,6 +92,7 @@ Step 5: Software Libraries
         $sudo ./install_package_and_dependencies.sh
 
 Table 2: Essential Packages provided by StarFive.
+<details>
 | Library                                 | Purpose                         |
 | :-------------------------------------- | :------------------------------ |
 | libxslt1.1                              | LibreOffice Runtime Dependency  |
@@ -178,6 +185,7 @@ Table 2: Essential Packages provided by StarFive.
         $pip install -r requirements.txt
    
 Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 and YOLOv8.
+<details>
 | Library                              | Version             |
 | :----------------------------------- | :------------------ |
 | antlr4-python3-runtime               | 4.9.3               |
@@ -407,8 +415,10 @@ Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 an
 | wheel                                | 0.38.4              |
 | xlwt                                 | 1.3.0               |
 | vim                                  | 2:9.0.0813-1+b1     |
+</details>
 
 # Step 5: Camera Accessibility
+<details><summary> <b>Expand</b> </summary>
 Use the 'lsusb' command to list the available device with device name and ID labelled. Identify the connected camera device and record its ID number. Perform the 'chmod' command to that specific video device to grant the permission for the host to access to the camera. To confirm if the permission has been granted, list the devices via 'v4l2-ctl' command. If the device is available under the list of StarFive Camera Subsystem, the camera is ready to be accessed, else it will return error: "Failed to open /dev/video4: Permission denied".
 
         $lsusb
@@ -425,7 +435,7 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/a506cac6-05b0-4e05-a878-fa18fbe3505b)
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/c68aeec3-38d6-4a0c-b26d-23c87b0f9bea)
-
+</details>
 
 # Step 6: Implementing Automatic Implementable Shell Script during Every Bootup
 <details><summary> <b>Expand</b> </summary>
@@ -453,9 +463,10 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 
 3. Restart the VisionFive2 SBC. Unplug the HDMI cable from the monitor, mouse and keyboard from the USB ports. 
 4. Open the UltraVNC application on local host computer, insert the IP address along with port number 1, eg. "192.168.137.244:1". A successful connection will be indicated by the pop up window that prompts user to insert password of that server. A MATE Desktop Environment will be displayed upon successful password authentication.
-<details>
+</details>
         
 # Step 7: Generating PyTorch Trained Model Files for YOLOv7 and YOLOv8
+<details><summary> <b>Expand</b> </summary>
 1. Open the Google Colab notebooks stipulated at the files attached at directories below:
 
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12lDEZSOSSGC0r9DW2gDardNGxaKbDmA9?usp=drive_link)
@@ -471,16 +482,19 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/665fed65-b365-45b8-aaaf-c503e0611180)
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/8c5512ae-f444-4697-bc95-ac640e4fdc5f)
-
+</details>
 
 # Step 8: Implementation of CV2 legacy tracker (Skip if you intended to implement YOLOv7 or YOLOv8)
+<details><summary> <b>Expand</b> </summary>
 1. For CV2 legacy tracker, open Python IDLE > Open file "CV2 Legacy Tracker.py".
 2. At line 11, define the camera source, in this case, "/dev/video4".
 3. Run the python code via key F5.
 4. A window will appear to prompt user to draw a blue bounding box to select the object to track.
 5. Visualise the resource usage using glances, glances is a debian resource monitoring tool.
+</details>
 
 # Step 9: Implementation of YOLOv7 (Skip if you intended to implement CV2 legacy tracker or YOLOv8)
+<details><summary> <b>Expand</b> </summary>
 1. For YOLOv7, open Python IDLE > Open file "yolov7/detect.py"
 2. At line 185, define the camera source, in this case, "/dev/video4".
 3. At line 184, ensure your PyTorch weight file, in this case, r"/home/user/Documents/FYP_19000760/yolov7/runs/train/exp3/weights/best.pt", is saved at the same directory as the "detect.py".
@@ -489,14 +503,16 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/68ddaaa3-0415-404d-9d71-3d7e0225fea1)
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/325e93b4-c168-4764-a0ef-52f7cb0a8720)
-     
+</details>
 
 # Step 10: Implementation of YOLOv8 (Skip if you intended to implement CV2 legacy tracker or YOLOv7)
+<details><summary> <b>Expand</b> </summary>
 1. For YOLOv8, open Python IDLE > Open file "yolov8/YOLOv8 Live Webcam Tracker.py"
 2. At line 90, define the camera source, in this case, "/dev/video4".
 3. At line 95, ensure your PyTorch weight file, in this case, "bestn.pt", is saved at the same directory as the "YOLOv8 Live Webcam Tracker.py".
 4. Run the python code via key F5.
 5. Visualise the resource usage using glances, glances is a debian resource monitoring tool.
+</details>
 
 **Note:**
 1. **Camera Accessibility**: VF2 board would have different value for /dev/video#, eg. # may vary from 3 ~ 8 during every bootup or different USB connection of camera.

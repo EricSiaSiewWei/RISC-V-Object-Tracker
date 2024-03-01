@@ -428,6 +428,7 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 
 
 # Step 6: Implementing Automatic Implementable Shell Script during Every Bootup
+<details><summary> <b>Expand</b> </summary>
 1. Create a shell script in Home directory named "vnc_connect.sh" via command nano.
         
         $nano vnc_connect.sh
@@ -452,7 +453,8 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 
 3. Restart the VisionFive2 SBC. Unplug the HDMI cable from the monitor, mouse and keyboard from the USB ports. 
 4. Open the UltraVNC application on local host computer, insert the IP address along with port number 1, eg. "192.168.137.244:1". A successful connection will be indicated by the pop up window that prompts user to insert password of that server. A MATE Desktop Environment will be displayed upon successful password authentication.
-
+<details>
+        
 # Step 7: Generating PyTorch Trained Model Files for YOLOv7 and YOLOv8
 1. Open the Google Colab notebooks stipulated at the files attached at directories below:
 

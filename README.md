@@ -40,6 +40,7 @@ VisionFive 2 supports several boot modes through SD image, NVMe (Non-Volatile Me
 
 # Step 2: Logging into Debian
 <details><summary> <b>Expand</b> </summary>
+        
 Table 1: Boot Modes Settings
 | Index  | Boot Mode  | RGPIO_1 | RGPIO_0 |
 | :------------ |:---------------:| -----:| -----:|

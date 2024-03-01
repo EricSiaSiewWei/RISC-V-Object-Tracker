@@ -29,6 +29,7 @@ Debian 12 (bookworm)
 # Step 1: Flashing Debian OS
 <details><summary> <b>Expand</b> </summary>
 VisionFive 2 supports several boot modes through SD image, NVMe (Non-Volatile Memory express) image, embedded MultiMediaCard (eMMC) image and Universal Asynchronous Receiver / Transmitter (UART). Nevertheless, SD card-based boot approach has been executed due to its simplicity, as it is a similar approach in setting up a Raspberry PI board.
+
 1. Browse for latest engineering release from StarFive at Microsoft OneDrive link: https://debian.starfivetech.com/
 2. Navigate towards SD card section and download the Debian image pre-built by StarFive.
 3. Download BalenaEtcher application.

@@ -456,10 +456,13 @@ To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, w
 # Step 7: Generating PyTorch Trained Model Files for YOLOv7 and YOLOv8
 1. Open the Google Colab notebooks stipulated at the files attached at directories below:
 
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12lDEZSOSSGC0r9DW2gDardNGxaKbDmA9?usp=drive_link)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1tmk_kEquRz6d18LwyMpiwUkoQ2Bcxa4b?usp=drive_link)
+
         yolov7 > YOLOv7_Pipe_Tracker.ipynb
         yolov8 > YOLOv8_Pipe_Tracker.ipynb
 
-2. After running all the codes line in the files at Google Colab, navigate to the files tab section at the Google Colab, searching for PyTorch trained model file (.pt) generated at the directories below. Remember to save the directories at Google Drive via function "Mount Drive".
+3. After running all the codes line in the files at Google Colab, navigate to the files tab section at the Google Colab, searching for PyTorch trained model file (.pt) generated at the directories below. Remember to save the directories at Google Drive via function "Mount Drive".
 
         For YOLOv7, run/train/exp/best.pt
         For YOLOv8, ultralytics/yolo/v8/detect/best.pt

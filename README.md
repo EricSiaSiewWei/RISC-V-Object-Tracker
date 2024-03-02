@@ -84,7 +84,7 @@ To ease the usage of VisionFive 2 SBC, it is essential to mirror a its interface
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/639798c0-2f3d-4e72-854d-793c40f6e6b2)
 2. It is essential to check the usable space on memory compartment (32-GB SD card) and expand the rootfs partition. If the available usable space of SD card at /dev/mmcblk1p4 is mismatched with the expected specification (usually smaller), several commands are needed to expand the unused space on the SD card. This is important to enable user to install any relevant libraries for future works.
 
-Step 5: Software Libraries
+# Step 5: Software Libraries
 1.At Terminal (non-root mode), install the essential packages provided by StarFive. In this context, user will obtain browsers such as Firefox and Chromium, VLC and FFmpeg as media player, and others packages include node.js, v8, libsdl2-dev, GStreamer, v4l2test, Libreoffice, QT and NW.js. Some of these essential packages provided by StarFive are not available to download via apt/apt-get. To improve overall user experience, install vim and nautilus (Gnome File Viewer) and upgrade several existing packages. Alternatively, install all these libraries simply via commands below:
 
         $wget https://github.com/starfive-tech/Debian/releases/download/v0.8.0-engineering-release-wayland/install_package_and_dependencies.sh

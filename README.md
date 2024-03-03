@@ -490,6 +490,7 @@ or
 
 # Step 8: Implementation of CV2 legacy tracker (Skip if you intended to implement YOLOv7 or YOLOv8)
 <details><summary> <b>Expand</b> </summary>
+        
 1. For CV2 legacy tracker, open Python IDLE > Open file "CV2 Legacy Tracker.py".
 2. At line 11, define the camera source, in this case, "/dev/video4".
 3. Run the python code via key F5.
@@ -499,6 +500,7 @@ or
 
 # Step 9: Implementation of YOLOv7 (Skip if you intended to implement CV2 legacy tracker or YOLOv8)
 <details><summary> <b>Expand</b> </summary>
+        
 1. For YOLOv7, open Python IDLE > Open file "yolov7/detect.py"
 2. At line 185, define the camera source, in this case, "/dev/video4".
 3. At line 184, ensure your PyTorch weight file, in this case, r"/home/user/Documents/FYP_19000760/yolov7/runs/train/exp3/weights/best.pt", is saved at the same directory as the "detect.py".
@@ -511,6 +513,7 @@ or
 
 # Step 10: Implementation of YOLOv8 (Skip if you intended to implement CV2 legacy tracker or YOLOv7)
 <details><summary> <b>Expand</b> </summary>
+        
 1. For YOLOv8, open Python IDLE > Open file "yolov8/YOLOv8 Live Webcam Tracker.py"
 2. At line 90, define the camera source, in this case, "/dev/video4".
 3. At line 95, ensure your PyTorch weight file, in this case, "bestn.pt", is saved at the same directory as the "YOLOv8 Live Webcam Tracker.py".

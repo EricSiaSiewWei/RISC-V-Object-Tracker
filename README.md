@@ -421,19 +421,21 @@ Table 3: Essential Python Libraries supporting OpenCV Legacy Trackers, YOLOv7 an
 
 # Step 5: Camera Accessibility
 <details><summary> <b>Expand</b> </summary>
-Use the 'lsusb' command to list the available device with device name and ID labelled. Identify the connected camera device and record its ID number. Perform the 'chmod' command to that specific video device to grant the permission for the host to access to the camera. To confirm if the permission has been granted, list the devices via 'v4l2-ctl' command. If the device is available under the list of StarFive Camera Subsystem, the camera is ready to be accessed, else it will return error: "Failed to open /dev/video4: Permission denied".
+In this project, OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, which can be necessary for compatibility with RISC-V features.
+1. Use the 'lsusb' command to list the available device with device name and ID labelled. Identify the connected camera device and record its ID number. 
+2. Perform the 'chmod' command to that specific video device to grant the permission for the host to access to the camera. To confirm if the permission has been granted, list the devices via 'v4l2-ctl' command. If the device is available under the list of StarFive Camera Subsystem, the camera is ready to be accessed, else it will return error: "Failed to open /dev/video4: Permission denied".
 
         $lsusb
         $sudo chmod 666 /dev/video4
         $v4l2-ctl --list-devices
         
-2. To test the camera accessibility, you may activate through ffplay via command
+3. To test the camera accessibility, you may activate through ffplay via command
 
         $ffplay -f v4l2 -framerate 30 -video_size 640x480 /dev/video4
 or
 
         Open Python IDLE > Open file "Camera Test.py" > Run
-To ensure OpenCV uses the Video4Linux2 (V4L2) backend driver on Linux systems, which can be necessary for compatibility with RISC-V features.
+
 
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/a506cac6-05b0-4e05-a878-fa18fbe3505b)
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/c68aeec3-38d6-4a0c-b26d-23c87b0f9bea)

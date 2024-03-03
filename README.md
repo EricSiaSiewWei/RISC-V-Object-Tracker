@@ -479,7 +479,7 @@ or
         yolov7 > YOLOv7_Pipe_Tracker.ipynb
         yolov8 > YOLOv8_Pipe_Tracker.ipynb
 
-3. After running all the codes line in the files at Google Colab, navigate to the files tab section at the Google Colab, searching for PyTorch trained model file (.pt) generated at the directories below. Remember to save the directories at Google Drive via function "Mount Drive".
+2. After running all the codes line in the files at Google Colab, navigate to the files tab section at the Google Colab, searching for PyTorch trained model file (.pt) generated at the directories below. Remember to save the directories at Google Drive via function "Mount Drive".
 
         For YOLOv7, run/train/exp/best.pt
         For YOLOv8, ultralytics/yolo/v8/detect/best.pt

@@ -551,7 +551,7 @@ The YOLOv7 files cloned from https://github.com/WongKinYiu/yolov7/blob/main/util
 
 | Before                                                                                   | After                                                                                                        |
 | :--------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
-| response = requests.get(f'https://api.github.com/repos/{repo}/releases/latest').json()   | After: response = requests.get(f'https://api.github.com/repos/{repo}/releases/71389134').json()              |
+| response = requests.get(f'https://api.github.com/repos/{repo}/releases/latest').json()   | response = requests.get(f'https://api.github.com/repos/{repo}/releases/71389134').json()              |
 
 ![image](https://github.com/EricSiaSiewWei/RISC-V-Object-Tracker/assets/136912487/267c6482-73b0-453d-b2fe-fcbc0d252f67)
 
